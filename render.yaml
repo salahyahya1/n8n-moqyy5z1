@@ -36,3 +36,7 @@ services:
         value: "true"
       - key: N8N_SKIP_WEBHOOK_DEREGISTRATION_SHUTDOWN
         value: "true"
+        - key: DB_POSTGRESDB_SCHEMA
+        value: public
+      - key: PGSSLMODE
+        value: no-verify
