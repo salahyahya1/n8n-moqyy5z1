@@ -91,3 +91,13 @@ services:
         value: https
       - key: N8N_PORT
         value: "5678"
+        - key: DB_POSTGRESDB_SSL_REJECT_UNAUTHORIZED
+        value: "false"
+      - key: NODE_OPTIONS
+        value: "--max-old-space-size=512"
+      - key: DB_POSTGRESDB_CONNECTION_TIMEOUT
+        value: "20000"
+      - key: N8N_DEFAULT_BINARY_DATA_MODE
+        value: filesystem
+      - key: EXECUTIONS_DATA_PRUNE
+        value: "true"
